@@ -3,3 +3,10 @@
   height: 100px;
   border: solid 1px black;
 }
+
+.board{
+  /*needs to be dynamic*/
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+}

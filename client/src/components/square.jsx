@@ -6,8 +6,7 @@ class Square extends Component {
 
 
     return(
-      <div className='square'>
-      </div>
+      
     )
   }
 }
