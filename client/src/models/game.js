@@ -17,7 +17,7 @@ class GameLogic{
   }
 
   setSquare(player,index){
-    this.gameBoard[index] = player.name
+    this.gameBoard[index] = player
   }
 
   getSquare(index){

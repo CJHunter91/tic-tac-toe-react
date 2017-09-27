@@ -12,7 +12,7 @@ class Game extends Component {
 
   render(){
     return(
-      <Board board={this.state.logic.gameBoard}/>
+      <Board logic={this.state.logic}/>
     )
   }
 }

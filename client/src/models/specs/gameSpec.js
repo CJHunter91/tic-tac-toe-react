@@ -14,7 +14,7 @@ describe('game Test', function(){
 
   it('should change the array at the specific index',function(){
     game.setSquare(game.player1, 1)
-    assert.equal('player1', game.gameBoard[1])
+    assert.equal(game.player1, game.gameBoard[1])
   })
 
   it('swap player', function(){

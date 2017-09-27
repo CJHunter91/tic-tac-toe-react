@@ -5,7 +5,8 @@ class Square extends Component {
   constructor(props){
     super(props)
     this.state = {
-      contains: null
+      contains: props.player,
+      image: props.player.image
     }
   }
 
@@ -16,7 +17,7 @@ class Square extends Component {
   render(){
     return(
       <div className = {this.props.classSet} onClick = {this.handleClick.bind(this)}>
-     <img src={this.state.contains}/>
+     <img src={this.state.image}/>
      </div>
     )
   }
