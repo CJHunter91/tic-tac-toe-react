@@ -3,9 +3,16 @@ import Board from '../components/board.jsx'
 
 class Game extends Component {
 
+  constructor(props){
+    super(props),
+    this.state = {
+      logic: props.logic
+    }
+  }
+
   render(){
     return(
-      <Board/>
+      <Board board={this.state.logic.gameBoard}/>
     )
   }
 }

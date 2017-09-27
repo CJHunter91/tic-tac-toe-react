@@ -6,15 +6,14 @@ class Board extends Component {
   constructor(props){
     super(props),
     this.state = {
-      size: 3
+      board: props.board
     }
-    this.board = Array(9).fill(null);
   }
 
 
   render(){
-
-    const squareCreation = this.board.map((square, index) =>{
+    console.log(this.state.board)
+    const squareCreation = this.state.board.map((square, index) =>{
       return(
             <Square key={index} classSet = {index + ' square'} />
         )
