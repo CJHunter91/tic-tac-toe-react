@@ -16,9 +16,7 @@ class Board extends Component {
 
     const squareCreation = this.board.map((square, index) =>{
       return(
-          <div className= 'square' className={index} >
-            <Square key={index}/>
-          </div>
+            <Square key={index} classSet = {index + ' square'} />
         )
     })
 
